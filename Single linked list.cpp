@@ -1,5 +1,3 @@
-1.//program for insertion in single link list.
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -82,7 +80,6 @@ void displayLinkedList(struct Node* head) {
 int main() {
     struct Node* head = NULL;
 
-    // Insertion at the beginning
     insertAtBeginning(&head, 10);
     insertAtBeginning(&head, 20);
     insertAtBeginning(&head, 30);
@@ -90,14 +87,12 @@ int main() {
     printf("Linked list after insertion at the beginning: ");
     displayLinkedList(head);
 
-    // Insertion at the end
     insertAtEnd(&head, 40);
     insertAtEnd(&head, 50);
 
     printf("Linked list after insertion at the end: ");
     displayLinkedList(head);
 
-    // Insertion at a specific position
     insertAtPosition(&head, 25, 2);
     insertAtPosition(&head, 35, 4);
 
@@ -209,33 +204,25 @@ void displayList(struct Node* head) {
 int main() {
     struct Node* head = NULL;
 
-    // Insert elements at the beginning
     insertAtBeginning(&head, 3);
     insertAtBeginning(&head, 2);
     insertAtBeginning(&head, 1);
 
-    // Display the original list
     printf("Linked List: ");
     displayList(head);
-
-    // Delete node at the beginning
+    
     deleteAtBeginning(&head);
 
-    // Display the list after deletion at the beginning
     printf("Linked List after deletion at the beginning: ");
     displayList(head);
 
-    // Delete node at the end
     deleteAtEnd(&head);
 
-    // Display the list after deletion at the end
     printf("Linked List after deletion at the end: ");
     displayList(head);
 
-    // Delete node at a specific position
     deleteAtPosition(&head, 1);
 
-    // Display the list after deletion at a specific position
     printf("Linked List after deletion at a specific position: ");
     displayList(head);
 
