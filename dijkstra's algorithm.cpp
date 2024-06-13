@@ -4,7 +4,6 @@
 #define V 9
  
 int minDistance(int dist[], int sptSet[]) {
-    // Initialize min value
     int min = INT_MAX, min_index;
     int v;
     for (v = 0; v < V; v++)
